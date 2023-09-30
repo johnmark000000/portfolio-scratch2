@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Mark Prado - About</title>
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- Google icon CDN -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Devicon CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+    <!-- animate css cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo" id="brand-logo">jmp.dev</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+              ><i class="material-icons">menu</i></a
+            >
+            <ul class="right hide-on-med-and-down">
+              <li>
+                <a
+                  href="./about.html"
+                  class="nav-btn nav-btn-active"
+                  onclick="handeClick(event)"
+                  id="text-color"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./contact.html"
+                  class="nav-btn"
+                  onclick="handeClick(event)"
+                  id="text-color"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <ul class="sidenav" id="mobile-demo">
+          <li>
+            <a href="./about.html" onclick="handeClick(event)" id="sidenav-btn"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="./contact.html"
+              onclick="handeClick(event)"
+              id="sidenav-btn"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </header>
+      <main>
+        <div class="about">
+          <h3 class="large-weight card-panel" id="about-card">About</h3>
+          <section class="card-panel">
+            <p class="flow-text">
+              Hello! I'm John Mark, a computer engineering student deeply
+              passionate about technology.
+            </p>
+            <p class="flow-text">
+              My path is a mix of learning and exploration. I enjoy diving into
+              intricate code and experimenting with hardware to better
+              understand the world of tech.
+            </p>
+            <p class="flow-text">
+              I'm also a tech enthusiast who stays updated with the latest
+              developments, loves dissecting gadgets, and can often be found
+              coding late into the night.
+            </p>
+          </section>
+        </div>
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="experience">
+              <h3 class="large-weight card-panel" id="about-card">
+                Experience
+              </h3>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <h3 class="med-weight">Web Developer</h3>
+                  <p>Freelance</p>
+                  <p>2022 - Present</p>
+                </div>
+                <div class="timeline-item">
+                  <h3 class="med-weight">IT Support & Web Developer Intern</h3>
+                  <p>NBC (Philippines) Car Technology Corporation</p>
+                  <p>2023, July - August</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6">
+            <div class="tech-stack">
+              <h3 class="large-weight card-panel" id="about-card">
+                Tech Stack
+              </h3>
+              <div class="row tech-row">
+                <div class="col s3 m4 xl4 tech-icon center">
+                  <i class="devicon-html5-plain-wordmark"></i>
+                </div>
+                <div class="col s3 m4 xl4 tech-icon center">
+                  <i class="devicon-css3-plain-wordmark"></i>
+                </div>
+                <div class="col s3 m4 xl4 tech-icon center">
+                  <i class="devicon-javascript-plain"></i>
+                </div>
+                <div class="col s3 m4 xl4 tech-icon center">
+                  <i class="devicon-php-plain"></i>
+                </div>
+                <div class="col s3 m4 xl4 tech-icon center">
+                  <i class="devicon-mysql-plain"></i>
+                </div>
+                <div class="col s3 m4 xl4 tech-icon center">
+                  <i class="devicon-java-plain"></i>
+                </div>
+                <div class="col s3 m4 xl4 tech-icon center">
+                  <i class="devicon-arduino-plain"></i>
+                </div>
+                <div class="col s3 m4 xl4 tech-icon center">
+                  <i class="devicon-bootstrap-plain"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Custom script -->
+    <script src="./script.js"></script>
+    <!-- jQuery CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".sidenav").sidenav();
+      });
+    </script>
+  </body>
+</html>

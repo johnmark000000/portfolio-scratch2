@@ -1,0 +1,276 @@
+:root {
+  --text: #000000;
+  --background: #eeeae1;
+  --primary: #8b7037;
+  --secondary: #ccd6eb;
+  --accent: #a88843;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background);
+}
+
+/* universal - header */
+nav {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+#brand-logo {
+  font-weight: 700;
+  color: var(--text);
+  width: 10rem;
+  text-align: center;
+}
+
+#brand-logo:hover {
+  background-color: var(--secondary);
+  font-weight: 700;
+  color: var(--text);
+  width: 10rem;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#logo-active {
+  background-color: var(--secondary);
+  font-weight: 700;
+  color: var(--text);
+  width: 10rem;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#text-color {
+  color: var(--text);
+  font-weight: 400;
+}
+
+.nav-btn {
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.nav-btn:hover {
+  background-color: var(--secondary);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.nav-btn-active {
+  background-color: var(--secondary);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.sidenav-trigger {
+  color: var(--text);
+}
+
+#sidenav-btn {
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#sidenav-btn:hover {
+  border-radius: 10px;
+  background-color: var(--secondary);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* index - main */
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 95vh;
+}
+
+.col-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0rem 2rem;
+}
+
+.col-left h1 {
+  margin-bottom: 0.5rem;
+  font-size: 3rem;
+}
+
+.col-left h6 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+#accent-text {
+  color: var(--accent);
+}
+
+#col-left-h1 {
+  color: var(--text);
+  font-weight: 600;
+}
+
+#name {
+  font-style: italic;
+  font-weight: 600;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--primary);
+  color: transparent;
+}
+
+#col-left-h6 {
+  color: var(--text);
+  font-weight: 400;
+}
+
+.col-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 2rem;
+}
+
+.laptop-image {
+  width: 100%;
+}
+
+/* media responsiveness */
+@media screen and (max-width: 768px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* about - main */
+section.card-panel {
+  background-color: var(--background);
+  border-radius: 10px;
+  transition: box-shadow 0.2s ease;
+}
+
+section.card-panel:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+section.card-panel:active {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(0);
+}
+
+.flow-text {
+  background-color: transparent;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  position: relative;
+  margin-left: 3rem;
+}
+
+.timeline-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  position: relative;
+  margin-left: 20px;
+}
+
+.timeline-item::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: var(--accent);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: -5px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.timeline-item::after {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: var(--secondary);
+  position: absolute;
+  left: -1px;
+  top: 0;
+}
+
+.timeline-item p {
+  font-size: 1.3rem;
+}
+
+.tech-stack,
+.experience {
+  padding: 1%;
+}
+
+.card-panel {
+  width: fit-content;
+  border-radius: 5px;
+}
+
+#about-card {
+  background-color: var(--accent);
+  border-radius: 5px;
+}
+
+.large-weight {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.med-weight {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.tech-icon {
+  margin-top: 10px;
+  color: var(--accent);
+  font-size: 4rem;
+  background-color: transparent;
+  transform: rotate(0deg) skew(0deg) translate(0, 0);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.tech-icon:hover {
+  background-color: transparent;
+  transform: rotate(0deg) skew(0deg) translate(0, -30px);
+}
+
+/* contact page */
+section#contact-panel {
+  width: 100%;
+}
+
+#in-touch {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+#link {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--text);
+}
+
+#email {
+  font-size: 1.5rem;
+  margin-top: 40px;
+}

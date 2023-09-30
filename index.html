@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Mark Prado</title>
+    <!-- compiled and minified css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- google icon cdn -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google fonts cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- animate css cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo" id="logo-active">jmp.dev</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+              ><i class="material-icons">menu</i></a
+            >
+            <ul class="right hide-on-med-and-down">
+              <li>
+                <a
+                  href="./about.html"
+                  class="nav-btn"
+                  onclick="handeClick(event)"
+                  id="text-color"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./contact.html"
+                  class="nav-btn"
+                  onclick="handeClick(event)"
+                  id="text-color"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <ul class="sidenav" id="mobile-demo">
+          <li>
+            <a href="./about.html" onclick="handeClick(event)" id="sidenav-btn"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="./contact.html"
+              onclick="handeClick(event)"
+              id="sidenav-btn"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </header>
+      <main>
+        <section class="hero">
+          <div class="hero-container">
+            <div class="col-left animate__animated animate__backInLeft">
+              <h1 class="text">
+                <a class="name-text" id="col-left-h1"
+                  >Hi, I'm <a class="shuffle-link" id="name">John Mark</a></a
+                >
+              </h1>
+              <h6 class="text">
+                <a id="col-left-h6"
+                  >A <a id="accent-text">developer</a> crafting digital wonders
+                  in the world of technology</a
+                >
+              </h6>
+            </div>
+            <div class="col-right animate__animated animate__backInRight">
+              <img
+                src="../images/notebook.png"
+                alt="laptop"
+                class="laptop-image"
+              />
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- custom script -->
+    <script src="./script.js"></script>
+    <!-- jquery cdn -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- compiled and minified javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".sidenav").sidenav();
+      });
+    </script>
+  </body>
+</html>
