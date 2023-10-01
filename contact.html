@@ -73,6 +73,7 @@
           </div>
         </nav>
         <ul class="sidenav" id="mobile-demo">
+          <li><h2 id="sidenav-logo">jmp.dev</h2></li>
           <li>
             <a href="./about.html" onclick="handeClick(event)" id="sidenav-btn"
               >About</a
@@ -92,42 +93,44 @@
         <div class="contact">
           <h3 class="large-weight card-panel" id="about-card">Contact</h3>
           <section class="card-panel" id="contact-panel">
-            <h5 id="in-touch">Get in touch, let's talk.</h5>
+            <h5 class="flow-text" id="in-touch">Get in touch, let's talk.</h5>
             <p id="link">
               Feel free to send me an
               <a
-                href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=GTvVlcRwQZxkVtXgPSjHBLrCKhBCJxznzkSmnppjfkSChWgtFLRVcNcDsfxvCvrxQDcmMGGGnzMhS"
+                class="flow-text"
+                href="mailto:pradojohnmark40@gmail.com"
                 id="link"
+                target="_blank"
                 ><u>email</u></a
               >.
             </p>
-            <p id="email">pradojohnmark40@gmai.com</p>
+            <p class="flow-text" id="email">pradojohnmark40@gmail.com</p>
           </section>
         </div>
         <div class="fixed-action-btn">
-          <a class="btn-floating btn-large red">
-            <i class="large material-icons">mode_edit</i>
+          <a class="btn-floating btn-large">
+            <i class="large material-icons">arrow_drop_up</i>
           </a>
           <ul>
             <li>
-              <a class="btn-floating red"
-                ><i class="material-icons">insert_chart</i></a
+              <a
+                class="btn-floating"
+                id="btn-floating-linkedin"
+                href="https://www.linkedin.com/in/johnmarkjmp"
+                target="_blank"
               >
+                <i class="devicon-linkedin-plain"></i>
+              </a>
             </li>
             <li>
-              <a class="btn-floating yellow darken-1"
-                ><i class="material-icons">format_quote</i></a
+              <a
+                class="btn-floating"
+                id="btn-floating-github"
+                href="https://github.com/johnmark000000"
+                target="_blank"
               >
-            </li>
-            <li>
-              <a class="btn-floating green"
-                ><i class="material-icons">publish</i></a
-              >
-            </li>
-            <li>
-              <a class="btn-floating blue"
-                ><i class="material-icons">attach_file</i></a
-              >
+                <i class="devicon-github-original"></i>
+              </a>
             </li>
           </ul>
         </div>
@@ -148,7 +151,9 @@
     <script>
       $(document).ready(function () {
         $(".sidenav").sidenav();
-        $(".fixed-action-btn").floatingActionButton();
+        $(".fixed-action-btn").floatingActionButton({
+          hoverEnabled: false,
+        });
       });
     </script>
   </body>

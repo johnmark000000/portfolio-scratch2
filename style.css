@@ -6,7 +6,7 @@
   --accent: #a88843;
 }
 
-* {
+body {
   font-family: "Poppins", sans-serif;
   background-color: var(--background);
 }
@@ -66,8 +66,15 @@ nav {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.sidenav-trigger {
+/* sidenav */
+.material-icons {
   color: var(--text);
+}
+
+h2#sidenav-logo {
+  font-weight: 700;
+  font-size: 2rem;
+  padding: 10%;
 }
 
 #sidenav-btn {
@@ -80,6 +87,10 @@ nav {
   border-radius: 10px;
   background-color: var(--secondary);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#mobile-demo {
+  background-color: var(--background);
 }
 
 /* index - main */
@@ -176,7 +187,7 @@ section.card-panel:active {
   align-items: flex-start;
   padding: 20px;
   position: relative;
-  margin-left: 3rem;
+  margin-left: 1rem;
 }
 
 .timeline-item {
@@ -241,8 +252,8 @@ section.card-panel:active {
 }
 
 .tech-icon {
-  margin-top: 10px;
-  color: var(--accent);
+  margin-top: 15px;
+  color: var(--text);
   font-size: 4rem;
   background-color: transparent;
   transform: rotate(0deg) skew(0deg) translate(0, 0);
@@ -255,12 +266,13 @@ section.card-panel:active {
 }
 
 /* contact page */
-section#contact-panel {
+#contact-panel {
   width: 100%;
+  padding: 1rem;
 }
 
 #in-touch {
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 
@@ -273,4 +285,27 @@ section#contact-panel {
 #email {
   font-size: 1.5rem;
   margin-top: 40px;
+}
+
+.btn-floating:hover {
+  cursor: hand;
+}
+
+#btn-floating-linkedin {
+  background-color: #0a66c2;
+}
+#btn-floating-github {
+  background-color: #010409;
+}
+
+.btn-large {
+  background-color: var(--secondary);
+}
+
+i.large.material-icons {
+  color: var(--text);
+}
+
+a.btn-floating.btn-large:hover {
+  background-color: var(--secondary);
 }
